@@ -28,16 +28,17 @@ class House < SQLObject
 end
 
 cat = Cat.find(1)
-print "here's your cat: "
-p cat
-print "here's your cat's human: "
-p cat.human
+puts "here's your cat: "
+pp cat
+puts "here's your cat's human: "
+pp cat.human
+puts
 
 human = Human.find(1)
 puts "here's your human's cats: "
 pp human.cats
-print "here's your human's house: "
-p human.house
+puts "here's your human's house: "
+pp human.house
 
-# print "here's your cat's house: "
-# p cat.house
+puts "here's your cat's house: "
+pp cat.house
